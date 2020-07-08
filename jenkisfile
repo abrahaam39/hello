@@ -1,0 +1,11 @@
+node {
+      stage('clone') {
+         git 'https://github.com/abrahaam39/hello'
+      }
+      stage('build') {
+          sh label:'',script : 'javac Main.java'
+      }
+      stage('run') {
+         sh label:'',script : 'java Main'
+      }
+   }       
