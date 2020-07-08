@@ -7,5 +7,6 @@ node {
       }
       stage('run') {
          sh label:'',script : 'java Main'
+         sh label:'',script : 'echo "bravo souna"   
       }
    }       
